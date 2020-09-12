@@ -1,5 +1,4 @@
 pandas
-warnings
 nltk
 nltk.tokenize
 nltk.corpus
