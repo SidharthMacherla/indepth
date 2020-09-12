@@ -1,3 +1,3 @@
 language: python
 # command to install dependencies
-install: pip install --user -r requirements.txt
+install: pip install -r requirements.txt
