@@ -1,4 +1,4 @@
 # indepth
 
-Python package
+This Python package is currently unstable.
 
