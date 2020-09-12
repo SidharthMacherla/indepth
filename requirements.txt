@@ -1,0 +1,6 @@
+pandas
+os
+warnings
+nltk
+nltk.tokenize
+nltk.corpus
