@@ -1,4 +1,2 @@
 pandas
 nltk
-nltk.tokenize
-nltk.corpus
