@@ -45,7 +45,7 @@ def tagged_to_synset(word, tag):
         return None
     
     
-def sentence_similarity(s1, s2):    
+def sentence_similarity(s1, s2):        
     s1 = pos_tag(word_tokenize(s1))
     s2 = pos_tag(word_tokenize(s2)) 
     
@@ -55,24 +55,34 @@ def sentence_similarity(s1, s2):
     #suppress "none"
     synsets1 = [ss for ss in synsets1 if ss]
     synsets2 = [ss for ss in synsets2 if ss]
- 
-    score, count = 0.0, 0
+        
+    scoreList = list()
     
-    for synset in synsets1:
-        best_score = max([synset.path_similarity(ss) for ss in synsets2])
-        if best_score is not None:
-            score += best_score
-            count += 1
- 
-    # Average the values
-    score /= count
-    return score
+    for i in range(0,len(synsets1)):           
+        best_score = max([synsets1[i].path_similarity(ss) for ss in synsets2])                
+        scoreList.append(best_score)    
+    
+    #drop None values if any from the list
+    scoreListUpdated = [i for i in scoreList if i]
+    
+    #average the best_score values
+    avgScore = (sum(scoreListUpdated)/len(scoreListUpdated))   
+
+    return(avgScore)
 
 #compute the symmetric sentence similarity
-def symSentSim(s1, s2):
+def symSentSim(s1, s2):     
     try:
-        sss_score = (sentence_similarity(s1, s2) + sentence_similarity(s2,s1)) / 2
-    except:
-        sss_score = 0
+        sssScoreSide1 = sentence_similarity(s1, s2)                                              
+    except:        
+        sssScoreSide1 = 0        
+    
+    try:
+        sssScoreSide2 = sentence_similarity(s2, s1)                                              
+    except:        
+        sssScoreSide2 = 0       
+    
+    sss_score = (sssScoreSide1 + sssScoreSide2)/2        
+
     return (sss_score)
 
