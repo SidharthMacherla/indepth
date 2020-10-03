@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="indepth",
-    version="1.0.0",
+    version="1.0.1",
     author="Sidharth Macherla",
     author_email="msidharthrasik@gmail.com",
     description="A Natural Language Processing toolkit",
@@ -20,11 +20,10 @@ setuptools.setup(
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
         "Natural Language :: English",
-        "Operating System :: OS Independent",
-        "Programming Language :: Python :: 2.7",
+        "Operating System :: OS Independent",        
         "Programming Language :: Python :: 3.6",
         "Topic :: Software Development :: Libraries :: Python Modules",  
         "Topic :: Text Processing :: Linguistic"      
     ],
-    python_requires='>=2.7',
+    python_requires='>=3.6',
 )
