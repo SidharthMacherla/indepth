@@ -1,4 +1,4 @@
 import indepth
 from indepth import *
 
-print(MostSimilarSent("this is test", "this is test", 1))
+print(MostSimilarSent("where there is a will, there is a way", "way", 1))
