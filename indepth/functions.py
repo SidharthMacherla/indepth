@@ -9,7 +9,7 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords as sw, cmudict, wordnet as wn, brown, words
 import re
 from nltk.stem import WordNetLemmatizer
-from essay_eval.lookup import helpingVrbs, comparisonWrds, additionWrds, exemplificationWrds, sequencing, result, contrast, qualifying, reformulation, highlighting, transition, cohesiveWrds, causalVerbs, mrc_psycholing
+from indepth.lookup import helpingVrbs, comparisonWrds, additionWrds, exemplificationWrds, sequencing, result, contrast, qualifying, reformulation, highlighting, transition, cohesiveWrds, causalVerbs, mrc_psycholing
 import os
 from nltk.parse.stanford import StanfordDependencyParser
 import math
