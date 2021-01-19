@@ -1,10 +1,7 @@
 pandas
 nltk
-nltk.tokenize
-nltk.corpus
 re
-nltk.stem
 pickle
 os
-os.path
+math
 indepth
