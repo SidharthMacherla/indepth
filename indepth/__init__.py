@@ -3,7 +3,7 @@
 # Invoke Libraries
 #&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 import pandas as pd
-from indepth.functions import remov_punct, symSentSim  
+from indepth.functions import remov_punct, symSentSim, wrdCnt, sbjVrbAgreement, modalRuleError, PrpDonot, VrbTenseAgreementError, a_an_error, realWrds, symSentSim, motionVerbs, coherentWrds, hyponymPolysem_cnt, concretMeaningPOS, vocabSize, commonWrd, buildFeatures 
 
 #&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 # Main function

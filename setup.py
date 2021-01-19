@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="indepth",
-    version="1.0.1",
+    version="1.1.0",
     author="Sidharth Macherla",
     author_email="msidharthrasik@gmail.com",
     description="A Natural Language Processing toolkit",
