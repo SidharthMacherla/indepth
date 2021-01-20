@@ -5,16 +5,15 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="indepth",
-    version="1.1.4",
+    version="1.1.1",
     author="Sidharth Macherla",
-    license = 'MIT',
     author_email="msidharthrasik@gmail.com",
     description="A Natural Language Processing toolkit",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/SidharthMacherla/indepth",
     packages=setuptools.find_packages(),
-    include_package_data=True,        
+    include_package_data=True,
     classifiers=[
         "Development Status :: 4 - Beta",
         "Environment :: Console",
