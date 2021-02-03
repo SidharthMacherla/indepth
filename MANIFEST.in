@@ -1,3 +1,4 @@
 include README.md
 include LICENSE
-inlcude setup.py
+include setup.py
+include indepth/data/mrc_psycholing.pkl
