@@ -75,7 +75,7 @@ def sentence_similarity(s1, s2):
     scoreList = list()
     
     for i in range(0,len(synsets1)):           
-        best_score = max([synsets1[i].path_similarity(ss) for ss in synsets2])                
+        best_score = max([synsets1[i].path_similarity(ss) for ss in synsets2 if synsets1[i].path_similarity(ss)])                
         scoreList.append(best_score)    
     
     #drop None values if any from the list
